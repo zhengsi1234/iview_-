@@ -60,6 +60,17 @@ Vue.component('Input', Input);
 Vue.component('Spin', Spin);
 Vue.config.productionTip = false
 
+import { getRequest } from '@/api/api.js'
+import { postRequest } from '@/api/api.js'
+import { deleteRequest } from '@/api/api.js'
+import { putRequest } from '@/api/api.js'
+// 将axios挂载到prototype上，在组件中可以直接使用this.axios访问
+Vue.prototype.getRequest = getRequest;
+Vue.prototype.postRequest = postRequest;
+Vue.prototype.deleteRequest = deleteRequest;
+Vue.prototype.putRequest = putRequest;
+
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

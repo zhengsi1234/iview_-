@@ -70,8 +70,6 @@ export default {
       this.spinShow=true;
       this.handleLogin({ userName, password }).then(res => {
           this.spinShow=false;
-          console.log(this.$store.state.user.token);
-          console.log(res);
         this.getUserInfo().then(res => {
             this.$router.push({
                 name: "home"

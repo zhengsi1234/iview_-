@@ -29,60 +29,6 @@
                 </Tooltip>
             </template>
         </div>
-        <!-- <Menu theme="dark" width="auto" accordion v-show="!collapsed" :open-names="openNames">
-            <template v-for="items in data">
-                <template v-if="items.list.length >0">
-                    <Submenu :name="items.order">
-                        <template slot="title">
-                            <Icon :type="items.icon" size="24"></Icon>
-                            <span>{{items.name}}</span>
-                        </template>
-                        <router-link :to="{name:Items.pathNmae}" v-for="(Items,index) in items.list" :key="index">
-                            <MenuItem :name="Items.order" @click.native="openName(items.order)">
-                                <Icon :type="Items.icon" size="22"></Icon>
-                                <span>{{Items.name}}</span>
-                            </MenuItem>
-                        </router-link>
-                    </Submenu>
-                </template>
-                <template v-if="items.list.length == 0">
-                    <router-link :to="{name:items.pathNmae}">
-                        <MenuItem :name="items.order" class="Radio_MenuItem" @click.native="closeMenu">
-                            <Icon :type="items.icon" size="24"></Icon>
-                            <span>{{items.name}}</span>
-                        </MenuItem>
-                    </router-link>
-                </template>
-            </template>
-        </Menu>
-        <Menu class="Mini_menu" theme="dark" width="auto" accordion v-show="collapsed">
-            <template v-for="items in data">
-                <template v-if="items.list.length >0">
-                    <div class="Mini_item">
-                        <Poptip placement="right-start" width="400" trigger="hover" transfer word-wrap :width="170" popper-class="Mini_item_cont">
-                            <Icon :type="items.icon" size="28"></Icon>
-                            <div slot="content">
-                                <router-link :to="{name:Items.pathNmae}" v-for="(Items,index) in items.list" :key="index+'1'">
-                                    <MenuItem :name="items.order">
-                                        <Icon :type="Items.icon" size="20"></Icon>
-                                        <span>{{Items.name}}</span>
-                                    </MenuItem>
-                                </router-link>
-                            </div>
-                        </Poptip>
-                    </div>
-                </template>
-                <template v-if="items.list.length == 0">
-                    <router-link :to="{name:items.pathNmae}">
-                        <MenuItem :name="items.order">
-                            <Tooltip :content="items.name" placement="right" transfer>
-                                <Icon :type="items.icon" size="28"></Icon>
-                            </Tooltip>
-                        </MenuItem>
-                    </router-link>
-                </template>
-            </template>
-        </Menu> -->
     </div>
 </template>
 <style lang="less">
