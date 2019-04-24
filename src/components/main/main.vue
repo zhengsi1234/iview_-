@@ -182,6 +182,7 @@ export default {
                 route: { name, query, params, meta },
                 type: 'push'
             })
+            console.log(getNewTagList(this.tagNavList, newRoute));
             this.setTagNavList(getNewTagList(this.tagNavList, newRoute))
         }
     },

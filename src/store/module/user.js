@@ -61,8 +61,11 @@ export default {
                     Cookies.remove('token')
                     commit('setAccess', [])
                     Cookies.remove('user')
+                    localStorage.removeItem("tagNaveList")
                     resolve()
                 },500);
+
+                
 
             // logout(state.token).then(() => {
             //     commit('setToken', '')

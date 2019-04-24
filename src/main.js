@@ -30,7 +30,8 @@ import {
   Form,
   FormItem,
   Input,
-  Spin
+  Spin,
+  Page 
 } from 'iview';
 Vue.component('Row', Row);
 Vue.component('Col', Col);
@@ -58,6 +59,7 @@ Vue.component('Form', Form);
 Vue.component('FormItem', FormItem);
 Vue.component('Input', Input);
 Vue.component('Spin', Spin);
+Vue.component('Page', Page);
 Vue.config.productionTip = false
 
 import { getRequest } from '@/api/api.js'

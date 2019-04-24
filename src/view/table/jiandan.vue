@@ -1,5 +1,6 @@
 <template>
     <div>
+        <Page :current="2" :total="50" />
         <h3 style="padding:20px 0">简单表格</h3>
         <Table :columns="table.columns1" :data="table.data1"></Table>
         <h3 style="padding:20px 0">带边框</h3>
@@ -11,11 +12,13 @@
         <Table border :columns="table3.columns5" :data="table3.data5"></Table>
         
     </div>
-</template>'<script>
+</template>
+<script>
 export default {
     data(){
         return{
             table:{
+                s:true,
                 columns1: [
                     {
                         title: 'Name',
@@ -199,8 +202,9 @@ export default {
                     }
                 ]
             }
+            ,
+            data5:[]
         }
     }
 }
 </script>
-'
